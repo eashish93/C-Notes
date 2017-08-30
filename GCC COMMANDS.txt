@@ -1,0 +1,57 @@
+To check whether GCC compiler is correctly installed
+type the following command in the Command line 
+gcc --version   {If you installed C compiler}
+g++ --version   {If you installed C++ compiler}
+
+To Compile and link the program
+cc program.c (generate default program name `a`)
+gcc -o filename cprogam.c
+or
+gcc filename -o cprogram.c
+
+// To check for error and warnings in the program, compile with options
+cc filename -Wall 
+
+To See the output of the preprocessor use:
+
+gcc cprogram.c -E
+
+
+// In Linux, exe can be run (in current directry)
+./a.out  	(where `a` is the default generated file)
+
+
+To take input from file and write output to file. Use the following command:
+For eg: For .txt files
+ program < input.txt > output.txt
+
+ When this command executes, it will read its standard input from the file `input.txt` instead of keyboard and it will write its
+ standard output to file `output.txt`.
+
+
+
+To compile file from a directory (suppose `lib/some_function.c`, use like 
+cc sdf.c lib/some_functions.c (in linux and windows both)
+ 
+ 	or
+cc sdf.c ./lib/some_functions.c (in linux only - above is preferred)
+	or 
+
+best use makefile
+
+// Note, there is a `-B` option is not used for above. It's only used for search compiler files. 
+// Also, it can be use in place of `-L` or `-I`
+
+
+/** We can also use `-L` option to set directory path (but this is only for libraries search not files)
+
+
+
+
+
+cls --- clear the screen
+cc (or gcc) -- for compiling program
+cd.. ( one step back on previous folder)
+dir (listing directories and files)
+c: (or d: or any drive name) 
+cd foldername (move into that folder)
